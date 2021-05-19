@@ -1,5 +1,5 @@
 # InterviewBit Solutions
-This repository contains solutions of various problems on interviewbit. In some problems, there are multiple approaches seperated by comments & algorithms and the code is written in Python3 and purely original. <br/>
+This repository contains solutions of various problems on InterviewBit. In some problems, there are multiple approaches/solutions seperated by comments & algorithms. The code is written in Python3 and purely original. <br/>
 Topics covered: <br/>
 - Arrays 
 - Math
