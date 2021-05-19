@@ -1,0 +1,19 @@
+# InterviewBit Solutions
+This repository contains solutions of various problems on interviewbit. In some problems, there are multiple approaches seperated by comments & algorithms and the code is written in Python3 and purely original. <br/>
+Topics covered: <br/>
+- Arrays 
+- Math
+<!-- - Binary Search
+- Strings
+- Bit Manipulation
+- Two Pointers
+- Linked Lists
+- Stack and Queues 
+- Backtracking
+- Hashing
+- Heaps and Maps
+- Tree
+- Dynamic Programming
+- Greedy Method --->
+
+More topics to be added... 
