@@ -1,10 +1,11 @@
 # Given a num, find if it can be expressed as A^P, where P > 1
 # and A > 0. A and P both should be integer
 
-
-#        A ^ P = num
-#        P.log(A) = log(num)
+# Logic: take log of num with base A 
 #        P = log(num) / log(A)
+
+# Logic 2: take inverse power of given number
+
 
 from math import sqrt, log
 
@@ -21,8 +22,4 @@ def solve2(num):
         if a ** p == num:
             return True
     return False
-    
-a = 'abc'
-b = reversed(a)
-for i in b:
-    print(i,end=' ')
+

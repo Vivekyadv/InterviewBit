@@ -13,6 +13,9 @@ def solve(a,b,c,d):
 
 print(solve(12,45,12,45))
 
+# method 2: append these elements in array and sort them, 
+# then compare index 0 with 1 and index 2 with 3
+
 def solve2(a,b,c,d):
     arr = [a,b,c,d]
     arr.sort()
