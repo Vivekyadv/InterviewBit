@@ -1,3 +1,8 @@
+# Given array, Count the number of ways to split all the elements of the 
+# array into 3 contiguous parts so that the sum of elements in each part 
+# is the same.
+
+
 def partition(A,B):
     total = sum(B)
     if total % 3 == 0:

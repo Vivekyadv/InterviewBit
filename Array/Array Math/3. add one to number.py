@@ -1,3 +1,9 @@
+# Given a number >= 0, represented as an array of digits, increment the number
+# and return as array
+# Example: num = [1,2,3,4] return [1,2,3,5]
+
+
+# method 1: extract num from array --> add one --> return in form of array
 def plusone(A):
     num = ''
     for el in A:
@@ -9,6 +15,15 @@ def plusone(A):
         res.append(int(el))
         
     return res
+
+
+# method 2: iterate array from the end --> res = arr[i] + 1 and check 
+# if res < 10: --> then store the res in arr[i] and break the loop
+# else: store res % 10 in arr[i] and pass the carry to next iteration
+
+# end case: [9,9,9] :: at the end of loop, carry will be 1 ans arr = [0,0,0]
+# add arr = carry + arr 
+
 
 def plusOne(A):
     val = 1
