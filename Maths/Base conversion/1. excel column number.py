@@ -13,3 +13,14 @@ def titleToNumber(title):
     return result
 
 print(titleToNumber('AAH'))
+
+# method 2
+def title2Number(title):
+    result = 0
+    for i in range(len(title)):
+        indx = ord(title[i]) - ord('A') + 1
+        result = result*26 + indx
+
+    return result
+
+print(title2Number("AAH"))
