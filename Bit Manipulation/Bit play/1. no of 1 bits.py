@@ -34,9 +34,7 @@ print(numSetBits(83))
 def numSetBits(num):
     count = 0
     for i in range(0,32):
-        b = 1<<i    # 2^i
-        a = num & b
-        if a:
+        if num & 1<<i:
            count += 1
     return count
 

@@ -4,13 +4,18 @@
 
 # Given array of n +ve int, find sum of f(arr[i], arr[j])
 
+# Hint: 
+# if arr[j] & 1: 
+#   count += 1
+# arr[j] = arr[j]>>1
+
 def diffBits(arr, n):
     ans = 0
     mod = 10**9 + 7
     for i in range(32):
         count = 0
-        for ele in arr:
-            if ele & 1<<i:
+        for j in range(n):
+            if arr[j] & 1<<i:
                 count += 1
         ans += count * (n-count)*2
     return ans % mod
