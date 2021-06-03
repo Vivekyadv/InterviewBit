@@ -88,10 +88,12 @@ def solve(n):
 		count += elementsOfLen
 	count -= (1 << (len-1)//2)
 
+	# offset = at which index, nth palindrome lies in group of len l
 	offset = n - count - 1
 	ans = 1 << (len-1)
 	ans |= (offset << (len//2))
 
+	# value for reverse valFR
 	valFR = (ans >> (len//2))
 	rev = getRev(valFR)
 
@@ -101,8 +103,10 @@ def solve(n):
 def getRev(n):
 	rev = 0
 	while n != 0:
+		# lowest bit lb
 		lb = n & 1
 		rev |= lb
+
 		rev <<= 1
 		n >>= 1
 	rev >>= 1
