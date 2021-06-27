@@ -76,14 +76,11 @@ def mergeKLists(A):
             node = node.next
 
     arr.sort()
-    tree = None
-    cur = None
-
-    for val in arr:
-        if tree == None:
-            tree = ListNode(val)
-            cur = tree
-        else:
-            cur.next = ListNode(val)
-            cur = cur.next
+    tree = ListNode(arr[0])
+    curr = tree
+    
+    for i in range(1, len(arr)):
+        curr.next = ListNode(arr[i])
+        curr = curr.next
+        
     return tree
