@@ -35,6 +35,33 @@ def fractionToDecimal(A, B):
     return ''.join(ans)
 
 
+def fractionToDecimal(p, q):
+        if q == 0: 
+            return 'ZeroDivisionError'
+        ans = ''
+        if p/q < 0:
+             ans = ans + '-'
+             
+        p, q = abs(p), abs(q)
+        ans = ans + str(p//q)
+        rem = (p % q) * 10
+        if rem == 0: 
+            return ans
+
+        table = {}
+        ans = ans + '.'
+        while rem != 0:
+            if rem in table:
+                indx = table[rem]
+                ans = ans[:indx] + '(' + ans[indx:len(ans)] + ')'
+                return ans
+
+            table[rem] = len(ans)
+            afterDecimal = rem//q
+            ans = ans + str(afterDecimal)
+            rem = (rem % q) * 10
+        return ans
+
 for i in range(10):
     p = 211
     q = i+1
